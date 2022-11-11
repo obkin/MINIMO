@@ -17,6 +17,9 @@ header
                 cursor: pointer
                 margin-left: 70px
                 transform: translateY(-10px)
+                transition: .5s all
+                &:hover
+                    width: 190px
         &_right
             // border: 2px solid green
             width: 130%
@@ -33,3 +36,33 @@ header
                     font-weight: 400
                     color: #878787
                     font-family: 'Playfair Display', serif
+                    transition: .2s all
+                    &:hover
+                        color: #CB997E
+                        font-size: 29px
+        
+.slider
+    padding: 20px 0 0 0 
+    &_block
+        width: 1262px
+        height: 591px
+        margin: 0 auto
+        background-color: #F2F2F2
+    &_slide
+        img
+            width: 1262px
+            height: 591px
+
+.getaway
+    padding: 95px 0 0 0
+    &_subheader-top
+        +subheader
+    &_header
+        margin-top: 25px
+        +header
+    &_descr
+        margin-top: 40px
+        +text
+    &_subheader-bottom
+        margin-top: 50px
+        +subheader
