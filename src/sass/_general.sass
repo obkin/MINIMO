@@ -8,7 +8,6 @@ header
         padding: 70px 50px 0 50px
         display: flex
         &_left
-            // border: 2px solid green
             width: 70%
             height: 150px
             img
@@ -21,7 +20,6 @@ header
                 &:hover
                     width: 190px
         &_right
-            // border: 2px solid green
             width: 130%
             height: 150px
             .header_list
@@ -84,7 +82,58 @@ header
         +text
 
 .photodiary
-    padding: 133px 0 0 0
+    padding: 133px 0 125px 0
+    &_img
+        width: 520px
+        height: 320px
+        background-color: #F2F2F2
+    &_subheader
+        margin-top: 30px
+        +subheader
+    &_header
+        margin-top: 30px
+        +header
+    &_descr
+        margin-top: 40px
+        +text
+
+.email
+    padding: 75px 0 75px 0
+    background-color: #F0F0F0
+    text-align: center
+    &_header
+        +header
+        color: #333333
+    &_input
+        border: none
+        background-color: #F0F0F0
+    &_block
+        margin-top: 30px
+        input
+            border: none
+            width: 500px
+            text-align: center
+            background-color: #F0F0F0
+            font-size: 24px
+        &:after
+            content: ''
+            display: block
+            margin: 0px auto
+            width: 270px
+            height: 2px
+            background-color: #333333
+    &_button
+        margin-top: 35px
+        width: 140px
+        height: 50px
+        font-size: 24px
+        border: 2px solid #333333
+        transition: .2s all
+        &:hover
+            background-color: #94908d60
+
+.lifestyle-second
+    padding: 100px 0 100px 0
     &_img
         width: 520px
         height: 320px
